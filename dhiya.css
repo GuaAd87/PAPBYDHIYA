@@ -3,7 +3,7 @@
 }
 body {
   overflow-x: hidden;
-  background-color: purple;
+  background-color: red;
   margin: 0;
   
 }
@@ -69,7 +69,7 @@ h6 {
 
 #button {
   font-size: 14px;
-  background-color: #FF0000; /* merah */
+  background-color: #00FFFF; /* aqua */
   box-shadow: 0 0 20px rgba(255, 0, 0, 1);
   padding: 10px 20px;
   margin-top: 10px;
@@ -200,3 +200,6 @@ h6 {
 .gambar6 {
   transform: rotate(-90deg)
 }
+.gambar7 {
+  transform: rotate(-90deg)
+} 
