@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="dhiya.css" rel="stylesheet">
+<title>Login Page</title>
+</head>
+<body>
+<h1>LOGIN DULU YAA</h1>
+<form>
+<label for="username">NAMA KAMU</label>
+<input type="text" id="username" name="username"><br><br>
+<label for="password">PASSWORD</label>
+<input type="password" id="password" name="password"><br><br>
+<input type="button" value="Masuk" onclick="checkLogin()">
+</form>
+<script>
+function checkLogin() {
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+fetch('database.json')
+.then(response => response.json())
+.then(data => {
+var users = data.users;
+var found = false;
+for (var i = 0; i < users.length; i++) {
+if (users[i].username === username && users[i].password === password) {
+found = true;
+break;
+}
+}
+if (found) {
+// Jika username dan password benar, maka akan mengarah ke halaman selanjutnya
+window.location.href = "Ph.html";
+} else {
+// Jika username dan password salah, maka akan keluar dari website tersebut
+alert("Username atau password salah! Anda akan keluar dari website ini.");
+window.location.href = "https://www.google.com"; // Contoh, mengarah ke google.com
+}
+})
+.catch(error => console.error('Error:', error));
+}
+</script>
+</body>
+</html>

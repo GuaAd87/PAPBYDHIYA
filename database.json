@@ -1,0 +1,22 @@
+*DATABASE USER* ( JSON )
+
+{
+  "users": [
+    {
+      "username": "DhiyaEliya",
+      "password": "070920"
+    },
+    {
+      "username": "AdamHamiz",
+      "password": "080130"
+    },
+    {
+      "username": "Dynx",
+      "password": "Dhiya"
+    },
+    {
+      "username": "GuaAd",
+      "password": "Adam"
+    }
+  ]
+}
